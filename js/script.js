@@ -1,4 +1,4 @@
-function deleteLastDigit() {
+function reverseInput() {
   var celsiusInput = document.getElementById('celsius-input').value;
   var updatedInput = celsiusInput.slice(0, -1);
   document.getElementById('celsius-input').value = updatedInput;

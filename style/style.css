@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+  padding: 10px;
+  background-color: #f9f7f7;
+}
+#celsius-input,
+#result,
+#kalkulasi-result:focus {
+  outline: 1px solid gold;
+}
+.btn-group {
+  margin-top: 5px;
+}
+.btn-group button {
+  padding: 5px;
+  cursor: pointer;
+}
+.link {
+  margin: 20px 0;
+}
+.link a {
+  text-decoration: none;
+}
+.s-simbol {
+  font-size: 100px;
+  font-weight: bold;
+  vertical-align: super;
+}
+#errorResult {
+  color: rgb(224, 30, 30);
+}
+@media (max-width: 768px) {
+  main {
+    padding: 20px;
+  }
+  .container {
+    width: 100%;
+  }
+
+  #celsius-input,
+  #result,
+  #kalkulasi-result {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

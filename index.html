@@ -1,0 +1,30 @@
+-<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Websait Konversi Suhu</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <p>Masukan suhu derajat Celcius ( &#x2103; ) ke kotak di bawah, lalu klik tombol konversi untuk mendapatkan hasil konversi dalam bentuk fahrenheit ( &#8457; )</p>
+        <span id="errorResult"></span>
+        <p>Celcius ( &#x2103; ) :</p>
+        <textarea name="celcius" id="celsius-input" cols="50" rows="5"></textarea>
+        <div class="btn-group">
+          <button onclick="convertToFahrenheit()">Konversi</button>
+          <button onclick="resetInput()">Reset</button>
+          <button onclick="deleteLastDigit()">Reverse</button>
+        </div>
+        <p>Fahrenheit ( &#8457; ) :</p>
+        <textarea name="fahrenheit" id="result" cols="50" rows="5"></textarea>
+        <p>Cara kalkulasi :</p>
+        <textarea name="kalkulasi" id="kalkulasi-result" cols="50" rows="5"></textarea>
+        <hr />
+      </div>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
